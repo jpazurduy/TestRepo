@@ -30,6 +30,11 @@ import UIKit
 import UserNotifications
 
 class PlacesTableViewController: UITableViewController {
+  
+  var code1: Int?
+  var code2: Int?
+  var code3: Int?
+  
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return LocationsStorage.shared.locations.count
   }
